@@ -41,6 +41,7 @@ class ModalConfirmDelete extends Component {
 
   render() {
     return (
+      <container>
       <Modal
         trigger={<Button onClick={this.handleOpen} color={this.props.buttonColor}>{this.props.buttonTriggerTitle}</Button>}
         open={this.state.modalOpen}
@@ -57,6 +58,7 @@ class ModalConfirmDelete extends Component {
           <Button onClick={this.handleClose} color='black'>No</Button>
           </Modal.Actions>
       </Modal>
+      </container>
     );
   }
 }
